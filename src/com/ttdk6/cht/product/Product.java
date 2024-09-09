@@ -5,7 +5,7 @@ import java.util.Date;
 public class Product {
     int id;
     String name;
-    int categoryld;
+    int categoryId;
     Date saleDate;
     int quility;
 
@@ -14,10 +14,10 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, String name, int categoryld, Date saleDate, int quility, Boolean isDelete) {
+    public Product(int id, String name, int categoryId, Date saleDate, int quility, Boolean isDelete) {
         this.id = id;
         this.name = name;
-        this.categoryld = categoryld;
+        this.categoryId = categoryId;
         this.saleDate = saleDate;
         this.quility = quility;
         this.isDelete = isDelete;
@@ -39,12 +39,12 @@ public class Product {
         this.name = name;
     }
 
-    public int getCategoryld() {
-        return categoryld;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategoryld(int categoryld) {
-        this.categoryld = categoryld;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public Date getSaleDate() {
@@ -76,7 +76,7 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", categoryld=" + categoryld +
+                ", categoryld=" + categoryId +
                 ", saleDate=" + saleDate +
                 ", quility=" + quility +
                 ", isDelete=" + isDelete +
